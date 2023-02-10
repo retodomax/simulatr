@@ -118,7 +118,6 @@ plot.SimulationResult <- function(
         main = "Continuous Fake Data",
         xlab = "Group",
         ylab = "Simulated Values") {
-
   # TODO implement the plot function: DONE
   ggplot(data = x$data,aes(group = group, y = values))+
     geom_boxplot()+
