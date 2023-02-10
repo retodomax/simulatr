@@ -25,7 +25,8 @@ Imports:
 	graphics,
 	tools,
 	rlang,
-	checkmate (>= 2.0.0)
+	checkmate (>= 2.0.0),
+	ggplot2 (>= 3.0.0)
 Suggests: 
     knitr,
     rmarkdown,

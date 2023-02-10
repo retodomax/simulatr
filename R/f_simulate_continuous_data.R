@@ -8,7 +8,12 @@
 #' groups.
 #'
 #' @param n1 a single integer value. The sample size of group 1.
-#' TODO document all arguments
+#' @param n2 a single integer value. The sample size of group 2.
+#' @param mean1 a single numeric value. The mean of group 1.
+#' @param mean2 a single numeric value. The mean of group 2.
+#' @param sd1 a single numeric value. The mean of group 1.
+#' @param sd2 a single numeric value. The mean of group 2.
+#' @param seed a single integer value. The seed used.
 #'
 #' @details
 #' TODO describe
@@ -114,6 +119,8 @@ plot.SimulationResult <- function(
         xlab = "Group",
         ylab = "Simulated Values") {
 
-    # TODO implement the plot function
-  stop("not implemented yet")
+  # TODO implement the plot function: DONE
+  ggplot(data = x$data,aes(group = group, y = values))+
+    geom_boxplot()+
+    labs(x = xlab, y = ylab, title = main)
 }
